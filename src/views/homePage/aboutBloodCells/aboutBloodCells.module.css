@@ -1,0 +1,42 @@
+.aboutBloodCells h2{
+    display: flex;
+    flex-direction: column;
+}
+.aboutBloodCells{
+    position: relative;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.bgImg{
+    position: absolute;
+    bottom: -350px;
+    left: -190px;
+}
+@media (max-width:900px) {
+    .bgImg{
+        width: 50%;
+        left: 60%;
+        bottom: -120px;
+    }
+    .bgImg img{
+        width: 100%;
+    }
+}
+@media (max-width:840px) {
+    .aboutBloodCells h2{
+        padding-bottom: 150px;
+    }
+}
+@media (max-width:768px) {
+    .aboutBloodCells h2{
+        padding-bottom: 100px;
+    }
+}
+@media (max-width:450px) {
+    .bgImg{
+        width: 100%;
+        left: 0;
+        bottom: calc(-33vw - 3%);
+    }
+    
+}

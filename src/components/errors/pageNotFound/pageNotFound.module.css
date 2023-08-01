@@ -1,0 +1,46 @@
+.wrapper{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    top: 10%;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 500px;
+    font-size: 35vw;
+}
+
+.content span:has(img){
+    position: relative;
+    top: 5%;
+    width: 28vw;
+}
+.content span img {
+    width: 100%;
+    height: auto;
+}
+.content .left, .content .right{
+    position: relative;
+    z-index: -1;
+}
+.content .left{
+    left: 10%;
+}
+.content .right{
+    right:10%;
+}
+.children{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1.7vw + 2px);
+}

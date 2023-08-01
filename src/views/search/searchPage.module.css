@@ -1,0 +1,23 @@
+.searchPage{
+    padding-top: 75px ;
+    padding-bottom: 170px;
+}
+.searchPage h2{
+    padding-bottom: 0;
+}
+
+@media (max-width:840px){
+.searchPage{
+    padding-top: 0;
+}
+}
+@media (max-width:768px){
+    .searchPage h2{
+        font-size: calc(5.1vw + 2px);
+    }
+}
+@media (max-width:550px){
+    .searchPage h2{
+        font-size: 30px
+    }
+}
