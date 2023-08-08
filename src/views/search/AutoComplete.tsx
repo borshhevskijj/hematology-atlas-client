@@ -9,7 +9,7 @@ export const AutoComplete: React.FC = () => {
   const [isNamesLoaded, setIsNamesLoaded] = useState(!!localStorage.getItem("BCnames"));
 
   const getAllCellsNames = async () => {
-    const fetching = await fetch(`https://hematology-atlas-server-v2.vercel.app/allCells`);
+    const fetching = await fetch(`https://hematology-atlas-server.vercel.app/allCells`);
     const data = await fetching.json();
     setNames(data);
     localStorage.setItem("BCnames", JSON.stringify(data));

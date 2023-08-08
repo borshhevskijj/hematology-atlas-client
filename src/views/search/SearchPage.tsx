@@ -29,7 +29,7 @@ const SearchPage = () => {
         setLoading(true);
       }, 350);
 
-      const fetching = await fetch(`https://hematology-atlas-server-v2.vercel.app/search/${name}`);
+      const fetching = await fetch(`https://hematology-atlas-server.vercel.app/search/${name}`);
 
       if (fetching.ok) {
         const data = await fetching.json();

@@ -29,7 +29,7 @@ const HematopoiesisType = () => {
       let timerId = setTimeout(() => {
         setLoading(true);
       }, 450);
-      const fetching = await fetch(`https://hematology-atlas-server-v2.vercel.app/${type}`);
+      const fetching = await fetch(`https://hematology-atlas-server.vercel.app/hematopoiesis/${type}`);
       if (fetching.ok) {
         const data: IBloodCell[] = await fetching.json();
         setData(data);
