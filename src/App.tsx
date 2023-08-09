@@ -2,7 +2,6 @@ import React, { useState, lazy, Suspense, useRef } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./views/navBar/NavBar";
-// import HomePage from "./views/homePage/HomePage";
 
 import Spinner from "./components/spinner/Spinner";
 import BackgroundLines from "./components/backgroundLines/BackgroundLines";
