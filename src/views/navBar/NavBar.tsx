@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import cl from "./navBar.module.css";
 import { HashLink as Link } from "react-router-hash-link";
 import subMenuIcon from "../../assets/icons/subMenuIcon.svg";
@@ -64,6 +64,16 @@ const NavBar: React.FC<Props> = ({ isOpen, SubmenuRef }) => {
     setBrgMenuState(!isBrgMenuOpen);
   };
 
+  useEffect(() => {
+    alert(isBrgMenuOpen);
+    if (isBrgMenuOpen) {
+      // document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflowY = "hidden";
+    } else {
+      document.documentElement.style.overflowY = "initial"; // или 'scroll'
+    }
+  }, [isBrgMenuOpen]);
+
   return (
     <header className="container" id="main">
       <div onClick={() => toggleMenuStates()} className={`${cl.brgMenu} ${isBrgMenuOpen ? cl.open : ""}`}>
@@ -85,7 +95,6 @@ const NavBar: React.FC<Props> = ({ isOpen, SubmenuRef }) => {
               Кроветворение
               <img className={`${isOpen ? cl.imgClose : cl.imgOpen}`} src={subMenuIcon} alt="open/close icon" />
             </a>
-            {/* ---------------- */}
             <ul onClick={() => toggleMenuStates()} className={`${cl.submenu} ${isOpen ? cl.open : ""}`}>
               {menuLinks.subMenu.map(({ path, name }) => {
                 return (
