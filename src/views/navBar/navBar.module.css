@@ -188,11 +188,34 @@ nav ul li > *{
       z-index: 3;
       top: -20px;
       padding-top: 100px;
+      border-top-left-radius:15px ;
+      border-top-right-radius: 15px;
     }
     .submenuBtn img{
       left: 3%;
       width: 4vw;
     }
+
+
+    nav ul li > *{
+      padding: 7px 0;
+    }
+    .submenu.open{
+      display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      body .submenu.open {
+        overflow: hidden;
+      }
+      .submenu li{
+        flex-basis: 50%;
+        text-align: center;
+      }
+
+
   }
   
   @media (max-width:500px) {
@@ -202,4 +225,5 @@ nav ul li > *{
     nav > ul {
       gap: 45px;
     }
+
   }
