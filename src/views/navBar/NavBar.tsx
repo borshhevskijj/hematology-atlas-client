@@ -65,12 +65,10 @@ const NavBar: React.FC<Props> = ({ isOpen, SubmenuRef }) => {
   };
 
   useEffect(() => {
-    alert(isBrgMenuOpen);
     if (isBrgMenuOpen) {
-      // document.body.style.overflow = 'hidden';
-      document.documentElement.style.overflowY = "hidden";
+      document.documentElement.style.position = "fixed";
     } else {
-      document.documentElement.style.overflowY = "initial"; // или 'scroll'
+      document.documentElement.style.position = "initial";
     }
   }, [isBrgMenuOpen]);
 
