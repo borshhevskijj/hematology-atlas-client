@@ -161,6 +161,11 @@ nav ul li > *{
       opacity: 1;
       transition: .3s all ease-in;
       transform: translateY(0px);
+
+      touch-action: none;
+      -ms-touch-action: none;
+      overflow: hidden;
+
     }
     nav > ul {
       display: flex;
@@ -206,11 +211,6 @@ nav ul li > *{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-
-        touch-action: none;
-      -ms-touch-action: none;
-      overflow: hidden;
-
       }
       .submenu li{
         flex-basis: 50%;
