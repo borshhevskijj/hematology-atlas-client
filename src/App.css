@@ -106,9 +106,13 @@ h2{
 h3{
     font-size: 12px;
 }
-/* #aboutProject{
-    padding-bottom: 180px;
-} */
+
+.dropShadowContainer img {
+    filter: drop-shadow(3px 32px 120px rgba(132, 1, 91, 0.53));
+    -webkit-filter: drop-shadow(3px 32px 120px rgba(132, 1, 91, 0.53));
+}
+
+
 @media (max-width:1100px) {
     h2{
         font-size: 60px;
@@ -129,6 +133,10 @@ h3{
 .App{
     padding-top:100px ;
 }
+.dropShadowContainer img{
+        -webkit-filter: drop-shadow(3px 32px 60px rgba(132, 1, 91, 0.53));
+        filter: drop-shadow(3px 32px 60px rgba(132, 1, 91, 0.53));
+}
 }
 @media (max-width:768px) {
     h1,h2{
@@ -136,7 +144,7 @@ h3{
     }
     h1{
         font-size: calc(5.7vw + 9px);  
-      }
+    }
     h2{
         font-size: 30px;
         /* font-size: calc(7.1vw + 2px); */
@@ -145,6 +153,13 @@ h3{
         line-height: 16px;
     }
 }
+@media (max-width:535px) {
+    .dropShadowContainer img{
+        -webkit-filter: drop-shadow(3px 32px 60px rgba(132, 1, 91, 0.53));
+        filter: drop-shadow(3px 32px 60px rgba(132, 1, 91, 0.53));
+}
+}
+
 
 
 

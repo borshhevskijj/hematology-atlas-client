@@ -30,8 +30,8 @@ const Description = () => {
             значение в норме составляет 0,37—0,47, у мужчин — 0,4—0,54. Более 99% гематокрита приходится на эритроциты.
           </p>
         </div>
-        <div className={`${cl.imgWrapper} ${cl.imgWrapperToLeft}`}>
-          <img loading="lazy" src={img1} alt="qwe" />
+        <div className={`dropShadowContainer ${cl.imgWrapper} ${cl.imgWrapperToLeft}`}>
+          <img loading="lazy" src={img1} alt="decoration" />
         </div>
       </article>
       <article className={cl.lastBlock}>

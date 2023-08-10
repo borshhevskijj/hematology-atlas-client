@@ -15,8 +15,8 @@ const AboutBloodCells = () => {
       <Description />
       <Formation />
       <BloodCellsTypes />
-      <div className={cl.bgImg}>
-        <img src={img} alt="" />
+      <div className={`dropShadowContainer ${cl.bgImg}`}>
+        <img src={img} alt="decoration" />
       </div>
     </section>
   );

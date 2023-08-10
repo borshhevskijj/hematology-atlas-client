@@ -22,7 +22,6 @@ article{
 .imgWrapperToRight img {
     width: 100%;
     mix-blend-mode: hard-light;
-    filter: drop-shadow(18px 3px 30px rgba(96, 5, 74, 0.33));
 }
 .contentWrapper,.contentWrapper img {
     width: 100%;

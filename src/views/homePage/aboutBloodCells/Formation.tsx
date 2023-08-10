@@ -15,13 +15,13 @@ const Formation = () => {
           предшественников эритроцитов, тучных клеток и миелобластов.
         </p>
         <div className={`${cl.imgWrapper} ${cl.imgWrapperLeft} bRadius`}>
-          <img loading="lazy" src={img2} alt="qwerty" />
+          <img loading="lazy" src={img2} alt="decoration" />
         </div>
       </article>
 
       <article className={`${cl.contentWrapper} ${cl.lastBlock}`}>
-        <div className={`${cl.imgWrapper} ${cl.imgWrapperToRight}`}>
-          <img loading="lazy" src={img1} alt="qwe" />
+        <div className={`dropShadowContainer ${cl.imgWrapper} ${cl.imgWrapperToRight}`}>
+          <img loading="lazy" src={img1} alt="decoration" />
         </div>
         <p>
           От миелобластов происходят базофилы, нейтрофилы, эозинофилы и моноциты. Образование эритроцитов (эритропоэз)

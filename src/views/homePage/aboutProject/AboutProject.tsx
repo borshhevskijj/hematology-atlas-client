@@ -14,13 +14,13 @@ const AboutProject = () => {
             изменениям. Мы предоставляем информацию о различных типах клеток крови и позволяем визуально их
             идентифицировать.
           </p>
-          <div>
-            <img loading="lazy" src={img} alt="123" />
+          <div className="dropShadowContainer">
+            <img loading="lazy" src={img} alt="decoration" />
           </div>
         </div>
 
         <div className={`${cl.imgWrapper} bRadius`}>
-          <img loading="lazy" src={img2} alt="123" />
+          <img loading="lazy" src={img2} alt="decoration" />
         </div>
       </div>
     </section>

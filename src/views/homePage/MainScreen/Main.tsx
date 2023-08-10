@@ -1,10 +1,8 @@
 import { Input } from "../../search/Input";
 import cl from "./main.module.css";
-import img from "../../../assets/mainScreen/mainScreen.webp";
-import img2 from "../../../assets/mainScreen/mainscreenimg2.webp";
 
-import img3 from "../../../assets/mainScreen/test/leukoTest1.png";
-import img4 from "../../../assets/mainScreen/test/leukoTest2.png";
+import img1 from "../../../assets/mainScreen/leukotest1.webp";
+import img2 from "../../../assets/mainScreen/leukotest2.webp";
 const Main = () => {
   return (
     <section className={`${cl.main} container`}>
@@ -25,11 +23,11 @@ const Main = () => {
             гемопоэз.
           </p>
         </div>
-        <div className={cl.bigImageWrapper}>
-          <img src={img3} alt="image" />
+        <div className={`dropShadowContainer ${cl.bigImageWrapper}`}>
+          <img src={img1} alt="image" />
         </div>
-        <div className={cl.smallImageWrapper}>
-          <img src={img4} alt="image" />
+        <div className={`dropShadowContainer ${cl.smallImageWrapper}`}>
+          <img src={img2} alt="image" />
         </div>
       </div>
     </section>
