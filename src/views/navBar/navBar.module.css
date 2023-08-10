@@ -206,9 +206,11 @@ nav ul li > *{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-      }
-      body .submenu.open {
-        overflow: hidden;
+
+        touch-action: none;
+      -ms-touch-action: none;
+      overflow: hidden;
+
       }
       .submenu li{
         flex-basis: 50%;
