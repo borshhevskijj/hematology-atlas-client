@@ -9,13 +9,12 @@
 }
 .container img{
     width: 100vw;
-    height: 230%;
     height: 100%;
 }
 
 @media (max-width:840px) {
         .container img{    
             object-fit: cover;
-            object-view-box: inset(0% 0% 30% 50%);
+            /* object-view-box: inset(0% 0% 30% 50%); */
         }
 }

@@ -8,6 +8,7 @@ import Button from "../../button/Button";
 const PageNotFound: React.FC<error> = ({ errorMessage, responseStatus }) => {
   const navigate = useNavigate();
   const responseStatusChars = responseStatus.toString().split("");
+
   return (
     <div className={cl.wrapper}>
       <div className={cl.content}>
