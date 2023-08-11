@@ -4,17 +4,16 @@
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    top: 10%;
+    /* top: 10%; */
     left: 0;
     width: 100vw;
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
 }
 .content{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 500px;
     font-size: 35vw;
 }
 

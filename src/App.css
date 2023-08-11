@@ -84,9 +84,11 @@ body{
       margin: auto;
     }
   }
-.App{
+
+  
+/* .App{
     min-height: 100vh;
-}
+} */
 p,li{
     line-height: 130%;
 }
