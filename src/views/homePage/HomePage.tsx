@@ -6,8 +6,8 @@ const HomePage = () => {
   return (
     <>
       <Main />
-      <AboutBloodCells />
       <AboutProject />
+      <AboutBloodCells />
     </>
   );
 };

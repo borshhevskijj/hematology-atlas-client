@@ -6,7 +6,7 @@ import img2 from "../../../assets/aboutProject/aboutprojectimg2.webp";
 const AboutProject = () => {
   return (
     <section id="aboutProject" className={`${cl.aboutProject} container`}>
-      <h1>О проекте</h1>
+      <h2>О проекте</h2>
       <div className={cl.content}>
         <div className={`${cl.contentWrapper} ${cl.contentWrapperLeft}`}>
           <p>
