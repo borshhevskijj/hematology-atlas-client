@@ -7,6 +7,7 @@ import { error } from "../search/SearchPage";
 import cl from "./hematopoiesisType.module.css";
 import Spinner from "../../components/spinner/Spinner";
 import BackgroundLines from "../../components/backgroundLines/BackgroundLines";
+
 export interface IBloodCell {
   id: number;
   name: string;

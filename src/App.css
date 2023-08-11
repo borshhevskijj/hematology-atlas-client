@@ -107,10 +107,10 @@ h3{
     font-size: 12px;
 }
 
-.dropShadowContainer img {
+/* .dropShadowContainer img {
     filter: drop-shadow(3px 32px 120px rgba(132, 1, 91, 0.53));
     -webkit-filter: drop-shadow(3px 32px 120px rgba(132, 1, 91, 0.53));
-}
+} */
 
 
 @media (max-width:1100px) {
@@ -133,10 +133,10 @@ h3{
 .App{
     padding-top:100px ;
 }
-.dropShadowContainer img{
+/* .dropShadowContainer img{
         -webkit-filter: drop-shadow(3px 32px 60px rgba(132, 1, 91, 0.53));
         filter: drop-shadow(3px 32px 60px rgba(132, 1, 91, 0.53));
-}
+} */
 }
 @media (max-width:768px) {
     h1,h2{
@@ -154,10 +154,10 @@ h3{
     }
 }
 @media (max-width:535px) {
-    .dropShadowContainer img{
+    /* .dropShadowContainer img{
         -webkit-filter: drop-shadow(0px 0px 15px rgba(132, 1, 91, 0.53));
-        filter: drop-shadow(0px 0px 15px rgba(132, 1, 91, 0.53))
-}
+        filter: drop-shadow(0px 0px 15px rgba(132, 1, 91, 0.53));
+} */
 }
 
 
