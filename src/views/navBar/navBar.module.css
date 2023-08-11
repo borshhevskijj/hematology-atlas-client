@@ -154,7 +154,7 @@ nav ul li > *{
     }
     .menuActive {
       position: fixed;
-      background: #171717;
+      background: #1E1E1E;
       opacity: 1;
       transition: .3s all ease-in;
       transform: translateY(0px);
@@ -193,10 +193,11 @@ nav ul li > *{
       z-index: 3;
       top: -20px;
       padding-top: 100px;
-      border-top-left-radius:15px ;
+      border-top-left-radius:15px;
       border-top-right-radius: 15px;
-      filter: blur(15px);
-    }
+      -webkit-backdrop-filter: blur(15px);
+      backdrop-filter: blur(15px);
+        }
     .submenuBtn img{
       left: 3%;
       width: 4vw;
