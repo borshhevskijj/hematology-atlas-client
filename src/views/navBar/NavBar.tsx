@@ -78,7 +78,7 @@ const NavBar: React.FC<Props> = ({ isOpen, SubmenuRef }) => {
         <span />
       </div>
       <nav className={`${isBrgMenuOpen ? `${cl.menuActive} ${cl.menu}` : cl.menu}`}>
-        {isBrgMenuOpen && <BackgroundLines />}
+        {/* {isBrgMenuOpen && <BackgroundLines />} */}
         <ul>
           {menuLinks.mainMenu.map(({ path, name }) => {
             return (
