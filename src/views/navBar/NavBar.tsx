@@ -64,13 +64,13 @@ const NavBar: React.FC<Props> = ({ isOpen, SubmenuRef }) => {
     setBrgMenuState(!isBrgMenuOpen);
   };
 
-  useEffect(() => {
-    if (isBrgMenuOpen) {
-      document.documentElement.style.position = "fixed";
-    } else {
-      document.documentElement.style.position = "initial";
-    }
-  }, [isBrgMenuOpen]);
+  // useEffect(() => {
+  //   if (isBrgMenuOpen) {
+  //     document.documentElement.style.position = "fixed";
+  //   } else {
+  //     document.documentElement.style.position = "initial";
+  //   }
+  // }, [isBrgMenuOpen]);
 
   return (
     <header className="container" id="main">
