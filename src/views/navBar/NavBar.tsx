@@ -64,21 +64,13 @@ const NavBar: React.FC<Props> = ({ isOpen, SubmenuRef }) => {
     setBrgMenuState(!isBrgMenuOpen);
   };
 
-  // useEffect(() => {
-  //   if (isBrgMenuOpen) {
-  //     document.documentElement.style.position = "fixed";
-  //   } else {
-  //     document.documentElement.style.position = "initial";
-  //   }
-  // }, [isBrgMenuOpen]);
-
   return (
     <header className="container" id="main">
       <div onClick={() => toggleMenuStates()} className={`${cl.brgMenu} ${isBrgMenuOpen ? cl.open : ""}`}>
         <span />
       </div>
       <nav className={`${isBrgMenuOpen ? `${cl.menuActive} ${cl.menu}` : cl.menu}`}>
-        {isBrgMenuOpen && <BackgroundLines />}
+        {/* {isBrgMenuOpen && <BackgroundLines />} */}
         <ul>
           {menuLinks.mainMenu.map(({ path, name }) => {
             return (
