@@ -61,15 +61,15 @@ const NavBar: React.FC<Props> = ({ isOpen, SubmenuRef }) => {
   const [isBrgMenuOpen, setBrgMenuState] = useState(false);
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
-  useEffect(() => {
-    if (isBrgMenuOpen) {
-      document.documentElement.style.position = "fixed";
-      console.log(`html fixed ${isBrgMenuOpen}`);
-    } else {
-      document.documentElement.style.position = "initial";
-      console.log(`html initial ${isBrgMenuOpen}`);
-    }
-  }, [isBrgMenuOpen]);
+  // useEffect(() => {
+  //   if (isBrgMenuOpen) {
+  //     document.documentElement.style.position = "fixed";
+  //     console.log(`html fixed ${isBrgMenuOpen}`);
+  //   } else {
+  //     document.documentElement.style.position = "initial";
+  //     console.log(`html initial ${isBrgMenuOpen}`);
+  //   }
+  // }, [isBrgMenuOpen]);
 
   const toggleMenuStates = () => {
     if (windowWidth <= 840) {
