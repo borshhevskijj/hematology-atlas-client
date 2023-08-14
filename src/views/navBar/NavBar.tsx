@@ -59,18 +59,41 @@ const menuLinks = {
 
 const NavBar: React.FC<Props> = ({ isOpen, SubmenuRef }) => {
   const [isBrgMenuOpen, setBrgMenuState] = useState(false);
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+  useEffect(() => {
+    if (isBrgMenuOpen) {
+      document.documentElement.style.position = "fixed";
+      console.log(`html fixed ${isBrgMenuOpen}`);
+    } else {
+      document.documentElement.style.position = "initial";
+      console.log(`html initial ${isBrgMenuOpen}`);
+    }
+  }, [isBrgMenuOpen]);
 
   const toggleMenuStates = () => {
-    setBrgMenuState(!isBrgMenuOpen);
+    if (windowWidth <= 840) {
+      console.log(`windowWidth <= 840`, windowWidth <= 840);
+      setBrgMenuState(!isBrgMenuOpen);
+    } else {
+      console.log("windowWidth <= 840", windowWidth <= 840);
+    }
   };
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+    console.log(windowWidth);
+  }, [window.innerWidth]);
 
   return (
     <header className="container" id="main">
-      <div onClick={() => toggleMenuStates()} className={`${cl.brgMenu} ${isBrgMenuOpen ? cl.open : ""}`}>
+      <div onClick={() => setBrgMenuState(!isBrgMenuOpen)} className={`${cl.brgMenu} ${isBrgMenuOpen ? cl.open : ""}`}>
         <span />
       </div>
+
       <nav className={`${isBrgMenuOpen ? `${cl.menuActive} ${cl.menu}` : cl.menu}`}>
         {isBrgMenuOpen && <BackgroundLines />}
+
         <ul>
           {menuLinks.mainMenu.map(({ path, name }) => {
             return (

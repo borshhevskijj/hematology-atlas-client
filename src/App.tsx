@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense, useRef } from "react";
+import React, { useState, useRef, useEffect, lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./views/navBar/NavBar";
@@ -13,6 +13,7 @@ const PageNotFound = lazy(() => import("./components/errors/pageNotFound/PageNot
 
 const appRoutes = [
   { path: "/", component: <HomePage /> },
+  { path: "/err", component: <PageNotFound errorMessage="qwe" responseStatus={404} /> },
   { path: "spinner", component: <Spinner /> },
   { path: "search/:name", component: <SearchPage /> },
   { path: "hematopoiesis/:type", component: <HematopoiesisType /> },
