@@ -27,7 +27,7 @@ const Main = () => {
           <img src={img1} alt="image" />
         </div>
         <div className={`dropShadowContainer ${cl.smallImageWrapper}`}>
-          <img src={img2} alt="image" />
+          <img loading="lazy" src={img2} alt="image" />
         </div>
       </div>
     </section>

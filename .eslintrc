@@ -1,9 +1,0 @@
-{
-    "globals": {
-        "screen": true
-    },
-    "rules": {
-        "no-restricted-globals": "off"
-    }
-
-}

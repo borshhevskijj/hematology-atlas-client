@@ -69,7 +69,6 @@ const HematopoiesisType = () => {
   }
   return (
     <section className={`container ${cl.content}`}>
-      {/* <BackgroundLines /> */}
       {data.length > 0 &&
         data.map((item: any) => {
           return <Accordion key={item.id} data={item} />;
