@@ -3,7 +3,7 @@ import cl from "./aboutBloodCells.module.css";
 import Description from "./Description";
 import Formation from "./Formation";
 import BloodCellsTypes from "./BloodCellsTypes";
-import img from "../../../assets/aboutBloodCells/bloodTypesImg.png";
+import img from "../../../assets/aboutBloodCells/bloodtypesimg.webp";
 
 const AboutBloodCells = () => {
   return (

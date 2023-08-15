@@ -1,8 +1,8 @@
 .content{
     padding-top: 50px ;
     padding-bottom: 250px;
-    position: relative;
-    z-index: 9999999;
+    /* position: relative; */
+    /* z-index: 9999999; */
 }
 @media (max-width:1110px){
     .content{

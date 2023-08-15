@@ -22,6 +22,7 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
     box-sizing: border-box;
+    font-display: swap;
 }
 *::before, *::after{
     box-sizing: border-box;

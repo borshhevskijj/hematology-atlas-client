@@ -1,6 +1,6 @@
 import cl from "./description.module.css";
-import img1 from "../../../assets/aboutBloodCells/descriptionImg1.png";
-import img2 from "../../../assets/aboutBloodCells/descriptionImg2.png";
+import img1 from "../../../assets/aboutBloodCells/descriptionimg1.webp";
+import img2 from "../../../assets/aboutBloodCells/descriptionimg2.webp";
 
 const Description = () => {
   return (
