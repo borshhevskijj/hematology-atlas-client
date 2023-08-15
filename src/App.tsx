@@ -12,9 +12,10 @@ const HematopoiesisType = lazy(() => import("./views/Hematopoiesis/Hematopoiesis
 const PageNotFound = lazy(() => import("./components/errors/pageNotFound/PageNotFound"));
 
 const appRoutes = [
-  { path: "/", component: <HomePage /> },
   { path: "/err", component: <PageNotFound errorMessage="qwe" responseStatus={404} /> },
   { path: "spinner", component: <Spinner /> },
+  //
+  { path: "/", component: <HomePage /> },
   { path: "search/:name", component: <SearchPage /> },
   { path: "hematopoiesis/:type", component: <HematopoiesisType /> },
   { path: "*", component: <PageNotFound errorMessage={"Такой страницы не существует"} responseStatus={404} /> },

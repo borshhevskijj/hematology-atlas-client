@@ -5,7 +5,7 @@ import img1 from "../../../assets/mainScreen/leukotest1.webp";
 import img2 from "../../../assets/mainScreen/leukotest2.webp";
 const Main = () => {
   return (
-    <section id="main" className={`${cl.main} container`}>
+    <section className={`${cl.main} container`}>
       <h1>
         <span>гематологический</span>
         <span>атлас</span>
