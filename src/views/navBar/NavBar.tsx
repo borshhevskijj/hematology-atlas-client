@@ -63,16 +63,13 @@ const NavBar: React.FC<Props> = ({ isOpen, SubmenuRef }) => {
 
   const toggleMenuStates = () => {
     if (windowWidth <= 840) {
-      console.log(`windowWidth <= 840`, windowWidth <= 840);
       setBrgMenuState(!isBrgMenuOpen);
     } else {
-      console.log("windowWidth <= 840", windowWidth <= 840);
     }
   };
 
   useEffect(() => {
     setWindowWidth(window.innerWidth);
-    console.log(windowWidth);
   }, [window.innerWidth]);
 
   return (
